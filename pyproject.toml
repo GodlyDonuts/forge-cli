@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forge-cli"
+version = "0.1.0"
+description = "A multi-agent orchestrator TUI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=0.52.1",
+    "langgraph>=0.0.26",
+    "gitpython>=3.1.42"
+]
+
+[project.scripts]
+forge = "forge.main:app"
